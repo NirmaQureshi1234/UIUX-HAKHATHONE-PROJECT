@@ -5,7 +5,7 @@ import TopPicks from "@/app/components/TopPicks";
 import NewArrivals from "@/app/components/NewArrivals";
 import OurBlogs from "@/app/components/OurBlogs";
 import OurInstagram from "@/app/components/OurInstagram";
-import Footer from "@/app/components/Footer";
+
 
 function Home() {
   return (
@@ -17,7 +17,7 @@ function Home() {
       <NewArrivals />
       <OurBlogs />
       <OurInstagram />
-      <Footer />
+      
     </>
   );
 }
