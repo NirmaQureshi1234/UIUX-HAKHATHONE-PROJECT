@@ -8,6 +8,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
 
+  // Check screen width to determine if it's mobile
   useEffect(() => {
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth < 768)
@@ -32,28 +33,34 @@ export default function NavBar() {
     <nav className="bg-[#FBEBB5] px-6 py-4">
       <div className="flex items-center justify-between">
         {/* Center Section (Navigation Links) */}
-        <div className="hidden md:flex space-x-14 ml-20 items-center justify-center w-full">
-          <NavLinks />
-        </div>
+        {!isMobile && (
+          <div className="hidden md:flex space-x-14 ml-20 items-center justify-center w-full">
+            <NavLinks />
+          </div>
+        )}
 
         {/* Right Section (Icons) */}
         <div className="flex mr-3 items-center space-x-5 ">
           <NavIcons />
           {/* Hamburger Menu - Visible only on mobile */}
-          <button className="md:hidden p-2" onClick={toggleMenu}>
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          {isMobile && (
+            <button className="md:hidden p-2" onClick={toggleMenu}>
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          )}
         </div>
       </div>
-      <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-96" : "max-h-0"
-        }`}
-      >
-        <div className="pt-4 pb-2 space-y-2 text-center">
-          <NavLinks mobile />
+      {isMobile && (
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isOpen ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          <div className="pt-4 pb-2 space-y-2 text-center">
+            <NavLinks mobile />
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   )
 }
@@ -103,11 +110,7 @@ function NavIcons() {
         <ShoppingCart className="h-5 w-5" />
         <span className="sr-only">Cart</span>
       </button>
-    
     </>
   )
 }
 
- 
-
- 

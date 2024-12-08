@@ -81,6 +81,8 @@ export default function ShopPage() {
                             <Image
                               src="/images/tp14.png"
                               alt="Asgaard sofa"
+                               width={300}
+                                height={300}
                               className="h-full w-full object-cover object-center"
                             />
                           </div>

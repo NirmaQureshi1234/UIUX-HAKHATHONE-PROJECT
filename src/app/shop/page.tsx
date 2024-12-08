@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -33,10 +33,8 @@ export default function ShopPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-       
       {/* Header Section */}
       <div className="relative bg-white overflow-hidden">
-    
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="py-16 text-center">
             {/* Small Logo */}
@@ -83,10 +81,7 @@ export default function ShopPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((product) => (
-            <div
-              key={product.id}
-              className="relative group text-center p-6"
-            >
+            <div key={product.id} className="relative group text-center p-6">
               {/* Product Image */}
               <Image
                 src={product.image}
@@ -104,10 +99,10 @@ export default function ShopPage() {
               <p className="mt-2 text-lg text-gray-500">{product.price}</p>
 
               {/* Add to Cart Button */}
-              <Link href={"/SingleProductPage"} >
-              <button className="absolute inset-x-0 bottom-4 mx-auto w-10/12 bg-black text-white text-sm font-medium py-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Add to Cart
-              </button>
+              <Link href={"/SingleProductPage"}>
+                <button className="absolute inset-x-0 bottom-4 mx-auto w-10/12 bg-black text-white text-sm font-medium py-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Add to Cart
+                </button>
               </Link>
             </div>
           ))}
