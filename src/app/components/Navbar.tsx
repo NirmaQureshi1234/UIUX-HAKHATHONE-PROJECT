@@ -45,7 +45,7 @@ export default function NavBar() {
           {/* Hamburger Menu - Visible only on mobile */}
           {isMobile && (
             <button className="md:hidden p-2" onClick={toggleMenu}>
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-10 ml-11" />}
             </button>
           )}
         </div>

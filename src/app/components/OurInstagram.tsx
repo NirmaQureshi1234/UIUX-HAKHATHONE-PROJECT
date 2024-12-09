@@ -1,3 +1,4 @@
+import { Link } from "lucide-react";
 import React from "react";
 
 function OurInstagram() {
@@ -13,9 +14,10 @@ function OurInstagram() {
               Follow our store on Instagram
             </p>
             <div className="flex justify-center my-[10px]">
-              <button className="w-[255px] h-[65px] text-[20px] bg-[#ffff] rounded-[50px] text-black">
+             <button className="w-[255px] h-[65px] text-[20px] bg-[#ffff] rounded-[50px] text-black">
                 Follow Us
               </button>
+               
             </div>
           </div>
         </div>

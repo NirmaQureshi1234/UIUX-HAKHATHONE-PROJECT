@@ -344,7 +344,7 @@ export default function SingleProductPage() {
           </div>
           <div className="text-center lg:tex-center lg:w-full space-y-6 px-32 pb-28">
             <a
-              href="/Shop"
+              href="/shop"
               className="text-lg text-black justify-center relative hover:text-white"
             >
               View More
@@ -391,10 +391,10 @@ export default function SingleProductPage() {
 
           <div className="mt-auto flex gap-2 px-4 py-4 ">
             <button className="w-1/2 py-1 border border-black bg-transparent text-black font-medium rounded-full ">
-              <a href="/Cart"> View Cart</a>
+              <a href="/cart"> View Cart</a>
             </button>
             <button className="w-1/2 py-1 border border-black  bg-transparent text-black font-medium rounded-full">
-              <a href="/Checkout"> Checkout</a>
+              <a href="/checkout"> Checkout</a>
             </button>
           </div>
         </div>

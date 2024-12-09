@@ -1,16 +1,16 @@
 import React from "react";
-import Image from "next/image"; 
+import Image from "next/image";
 
 function NewArrivals() {
   return (
     <>
       <div className="h-[639px] flex flex-wrap items-center justify-center gap-[50px] bg-[#FFF9E5] text-black">
-        <Image 
-          src="/images/tp14.png" 
-          alt="Asgaard sofa" 
-          className="h-[700px] w-[900px]" 
-          width={900} 
-          height={700} 
+        <Image
+          src="/images/tp14.png"
+          alt="Asgaard sofa"
+          className="h-[700px] w-[900px]"
+          width={900}
+          height={700}
         />
         <div className="">
           <p className="text-[24px] text-center">New Arrivals</p>
