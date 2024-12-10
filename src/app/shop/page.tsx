@@ -58,9 +58,9 @@ export default function ShopPage() {
               </span>
               <FontAwesomeIcon
                 icon={faAngleRight}
-                className="text-gray-900 h-3 w-3 text-xs"
+                className="text-gray-500 h-3 w-3 text-xs"
               />
-              <span>Shop</span>
+              <span><a href="/singleProduct">Single Product</a></span>
             </p>
           </div>
         </div>
