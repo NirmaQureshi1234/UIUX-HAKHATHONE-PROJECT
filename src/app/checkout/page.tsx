@@ -14,7 +14,7 @@ export default function Checkout() {
             {/* Small Logo */}
             <div className="w-16 h-16 mx-auto mb-4">
               <Image
-                src="/images/minilogo.png"
+                src="/minilogo.png"
                 alt="Logo"
                 width={64}
                 height={64}
@@ -40,7 +40,7 @@ export default function Checkout() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/heroShop.png"
+            src="/heroShop.png"
             alt="Background"
             layout="fill"
             objectFit="cover"

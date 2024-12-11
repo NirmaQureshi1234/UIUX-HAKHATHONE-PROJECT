@@ -9,7 +9,7 @@ function MyAccount() {
       {/* Banner Section */}
       <div className="relative">
         <Image
-          src="/images/heroShop.png"
+          src="/heroShop.png"
           alt="Shop Banner"
           height={400}
           width={1600}
@@ -23,14 +23,14 @@ function MyAccount() {
           <p className="text-gray-700 text-xs md:text-xl flex items-center">
             <Link
               href="/"
-              className="text-sm text-gray-500 mt-2 flex items-center justify-center space-x-2"
+              className="text-sm text-gray-500 mt-2 flex items-center justify-center space-x-4"
             >
               Home
             </Link>
-            <span className="font-thin text-center mx-2">{">"}</span>
+            <span className="font-normal text-center mx-2">{">"}</span>
             <Link
               href="/singleProduct"
-              className="text-gray-500 h-3 w-3 text-xs"
+              className="text-gray-500 h-3 w-3 text-xs text-center"
             >
               SingleProduct
             </Link>

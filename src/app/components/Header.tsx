@@ -26,7 +26,7 @@ function Header() {
         </div>
         <div>
           <Image
-            src="/images/single-seater.png"
+            src="/single-seater.png"
             alt="Rocket single seater"
             width={853}
             height={700}

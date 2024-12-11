@@ -40,7 +40,7 @@ export default function SingleProductPage() {
         <div className="flex flex-col items-center">
           <div className="bg-yellow-50 p-4 rounded-lg w-full">
             <Image
-              src="/images/tp14.png"
+              src="/tp14.png"
               alt="Asgaard sofa"
               width={500}
               height={500}
@@ -54,7 +54,7 @@ export default function SingleProductPage() {
                 className="bg-yellow-50 p-2 justify-center rounded-lg cursor-pointer border border-gray-200 hover:border-gray-400"
               >
                 <Image
-                  src={`/images/tp${item}.png`}
+                  src={`/tp${item}.png`}
                   alt={`Thumbnail ${item}`}
                   width={80}
                   height={80}
@@ -246,7 +246,7 @@ export default function SingleProductPage() {
             {/* Left Image */}
             <div className="bg-yellow-50 p-6 rounded-lg">
               <Image
-                src="/images/sofa1.png"
+                src="/sofa1.png"
                 alt="Asgaard Sofa"
                 width={600}
                 height={400}
@@ -257,7 +257,7 @@ export default function SingleProductPage() {
             {/* Right Image */}
             <div className="bg-yellow-50 p-6 rounded-lg">
               <Image
-                src="/images/sofa2.png"
+                src="/sofa2.png"
                 alt="Asgaard Sofa"
                 width={600}
                 height={400}
@@ -281,7 +281,7 @@ export default function SingleProductPage() {
             {/* First Product */}
             <div className="text-center  p-6 rounded-lg w-64 mb-6">
               <Image
-                src="/images/tp1.png"
+                src="/tp1.png"
                 alt="Product 1"
                 width={300}
                 height={300}
@@ -297,7 +297,7 @@ export default function SingleProductPage() {
             {/* Second Product */}
             <div className="text-center  p-6 rounded-lg w-64 mb-6">
               <Image
-                src="/images/tp2.png"
+                src="/tp2.png"
                 alt="Product 2"
                 width={300}
                 height={300}
@@ -313,7 +313,7 @@ export default function SingleProductPage() {
             {/* Third Product */}
             <div className="text-center  p-6 rounded-lg w-64 mb-6">
               <Image
-                src="/images/tp3.png"
+                src="/tp3.png"
                 alt="Product 3"
                 width={300}
                 height={300}
@@ -329,7 +329,7 @@ export default function SingleProductPage() {
             {/* Fourth Product */}
             <div className="text-center  p-6 rounded-lg w-64 mb-6">
               <Image
-                src="/images/tp4.png"
+                src="/tp4.png"
                 alt="Product 4"
                 width={300}
                 height={300}
@@ -369,7 +369,7 @@ export default function SingleProductPage() {
           <div className="p-4 space-y-4">
             <div className="flex items-center space-x-4 ">
               <Image
-                src="/images/sofa1.png"
+                src="/sofa1.png"
                 alt="Cart Item"
                 width={70}
                 height={70}

@@ -1,12 +1,18 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation"; // Use this to get the current route
 import Link from "next/link";
 import { Heart, Menu, Search, ShoppingCart, User, X } from "lucide-react";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const pathname = usePathname(); // Get the current route
+
+  // Determine the background color based on the current route
+  const bgColor = pathname === "/" ? "bg-[#FBEBB5]" : "bg-white";
+
   useEffect(() => {
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -28,20 +34,16 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-[#FBEBB5] px-6 py-4">
+    <nav className={`${bgColor} px-6 py-4 transition-colors duration-300`}>
       <div className="flex items-center justify-between">
         <div className="hidden md:flex space-x-14 items-center justify-center w-full">
           <NavLinks />
         </div>
-        <div className="flex items-center space-x-5">
+        <div className="flex items-center space-x-11 ">
           <NavIcons />
           {isMobile && (
             <button className="p-2" onClick={toggleMenu}>
-              {isOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           )}
         </div>
@@ -65,8 +67,8 @@ export default function NavBar() {
 
 function NavLinks({ mobile = false }: { mobile?: boolean }) {
   const linkClass = mobile
-    ? "block py-2 text-lg font-medium"
-    : "text-sm font-medium text-center";
+    ? "block py-2 text-lg font-medium font-poppins"
+    : "text-sm font-medium text-center font-poppins";
 
   return (
     <>
@@ -115,3 +117,12 @@ function NavIcons() {
     </>
   );
 }
+
+ 
+ 
+
+ 
+
+
+ 
+

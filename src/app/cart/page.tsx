@@ -14,7 +14,7 @@ export default function ShopPage() {
             {/* Small Logo */}
             <div className="w-16 h-16 mx-auto mb-4">
               <Image
-                src="/images/minilogo.png"
+                src="/minilogo.png"
                 alt="Logo"
                 width={64}
                 height={64}
@@ -40,7 +40,7 @@ export default function ShopPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/heroShop.png"
+            src="/heroShop.png"
             alt="Background"
             layout="fill"
             objectFit="cover"
@@ -79,7 +79,7 @@ export default function ShopPage() {
                         <div className="flex items-center gap-4">
                           <div className="h-20 w-20 flex-shrink-0 overflow-hidden rounded-lg bg-yellow-100">
                             <Image
-                              src="/images/tp14.png"
+                              src="/tp14.png"
                               alt="Asgaard sofa"
                                width={300}
                                 height={300}

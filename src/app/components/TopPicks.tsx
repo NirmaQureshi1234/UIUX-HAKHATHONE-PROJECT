@@ -21,7 +21,7 @@ function TopPicks() {
         {/* Product 1 */}
         <div className="w-full sm:w-[47%] lg:w-[23%] bg-[#FAF4F4] rounded-md p-4">
           <Image
-            src="/images/mask-group3.png"
+            src="/mask-group3.png"
             alt="Trenton modular sofa_3"
             className="w-full rounded-lg"
             width={287}
@@ -38,7 +38,7 @@ function TopPicks() {
         {/* Product 2 */}
         <div className="w-full sm:w-[47%] lg:w-[23%] bg-[#FAF4F4] rounded-md p-4">
           <Image
-            src="/images/mask-group4.png"
+            src="/mask-group4.png"
             alt="Granite dining table with dining chair"
             className="w-full rounded-lg"
             width={287}
@@ -55,7 +55,7 @@ function TopPicks() {
         {/* Product 3 */}
         <div className="w-full sm:w-[47%] lg:w-[23%] bg-[#FAF4F4] rounded-md p-4">
           <Image
-            src="/images/mask-group5.png"
+            src="/mask-group5.png"
             alt="Outdoor bar table and stool"
             className="w-full rounded-lg"
             width={287}
@@ -72,7 +72,7 @@ function TopPicks() {
         {/* Product 4 */}
         <div className="w-full sm:w-[47%] lg:w-[23%] bg-[#FAF4F4] rounded-md p-4">
           <Image
-            src="/images/mask-group6.png"
+            src="/mask-group6.png"
             alt="Plain console with teak mirror"
             className="w-full rounded-lg"
             width={287}

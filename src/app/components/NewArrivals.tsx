@@ -6,7 +6,7 @@ function NewArrivals() {
     <>
       <div className="h-[639px] flex flex-wrap items-center justify-center gap-[50px] bg-[#FFF9E5] text-black">
         <Image
-          src="/images/tp14.png"
+          src="/tp14.png"
           alt="Asgaard sofa"
           className="h-[700px] w-[900px]"
           width={900}

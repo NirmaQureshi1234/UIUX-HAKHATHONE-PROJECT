@@ -12,7 +12,7 @@ function Blog() {
             {/* Banner Section */}
             <div className="relative text-black ">
                 <Image
-                    src="/images/heroShop.png" 
+                    src="/heroShop.png" 
                     alt="Shop Banner"
                     height={400}
                     width={600}
@@ -37,9 +37,9 @@ function Blog() {
   <div className="mt-8 w-full lg:w-3/4 gap-6">
     {/* Single Blog Post */}
     {[
-      { image: "/images/rectangle2.png", title: "Going all-in with millennial design", category: "Crafts", date: "01 Jan 2023" },
-      { image: "/images/rectangle3.png", title: "Exploring new ways of decorating", category: "Design", date: "15 Mar 2023" },
-      { image: "/images/rectangle1.png", title: "Handmade pieces that took time to make", category: "Wood", date: "20 Sep 2023" },
+      { image: "/p1.png", title: "Going all-in with millennial design", category: "Crafts", date: "01 Jan 2023" },
+      { image: "/p2.png", title: "Exploring new ways of decorating", category: "Design", date: "15 Mar 2023" },
+      { image: "/p3.png", title: "Handmade pieces that took time to make", category: "Wood", date: "20 Sep 2023" },
     ].map((post, index) => (
       <div key={index} className="bg-white p-4 rounded-lg transition-shadow">
         <Image
@@ -104,11 +104,11 @@ function Blog() {
       <h3 className="text-xl font-bold mb-4">Recent Posts</h3>
       <div className="space-y-6">
         {[
-          { image: '/images/b1.jpeg', title: 'Going all-in with millennial design', date: '03 Aug 2022' },
-          { image: '/images/b2.jpeg', title: 'Exploring new ways of decorating', date: '03 Aug 2022' },
-          { image: '/images/b3.jpeg', title: 'Handmade pieces that took time to make', date: '03 Aug 2022' },
-          { image: '/images/b4.jpeg', title: 'Modern home in Milan', date: '03 Aug 2022' },
-          { image: '/images/b5.jpeg', title: 'Colorful office redesign', date: '03 Aug 2022' },
+          { image: '/b1.jpeg', title: 'Going all-in with millennial design', date: '03 Aug 2022' },
+          { image: '/b2.jpeg', title: 'Exploring new ways of decorating', date: '03 Aug 2022' },
+          { image: '/b3.jpeg', title: 'Handmade pieces that took time to make', date: '03 Aug 2022' },
+          { image: '/b4.jpeg', title: 'Modern home in Milan', date: '03 Aug 2022' },
+          { image: '/b5.jpeg', title: 'Colorful office redesign', date: '03 Aug 2022' },
         ].map((post, index) => (
           <div key={index} className="flex space-x-3">
             <Image src={post.image} height={100} width={100} alt="" />

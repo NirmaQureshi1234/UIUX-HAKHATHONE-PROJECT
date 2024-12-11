@@ -18,7 +18,7 @@ function OurBlogs() {
           {/* Blog 1 */}
           <div className="w-full max-w-[300px]">
             <Image
-              src="/images/rectangle1.png"
+              src="/p1.png"
               alt="Blog Image 1"
               className="w-full h-auto rounded-md"
               width={300}
@@ -47,7 +47,7 @@ function OurBlogs() {
           {/* Blog 2 */}
           <div className="w-full max-w-[300px]">
             <Image
-              src="/images/rectangle2.png"
+              src="/p2.png"
               alt="Blog Image 2"
               className="w-full h-auto rounded-md"
               width={300}
@@ -76,7 +76,7 @@ function OurBlogs() {
           {/* Blog 3 */}
           <div className="w-full max-w-[300px]">
             <Image
-              src="/images/rectangle3.png"
+              src="/p3.png"
               alt="Blog Image 3"
               className="w-full h-auto rounded-md"
               width={300}

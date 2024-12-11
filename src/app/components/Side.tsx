@@ -8,7 +8,7 @@ function Side() {
       {/* Item 1 */}
       <div className="flex flex-col items-center w-full md:w-1/2 lg:w-[605px]">
         <Image
-          src="/images/side-table.png"
+          src="/side-table.png"
           alt="Side Table"
           className="w-full h-auto max-w-[500px]"
           width={500}
@@ -25,7 +25,7 @@ function Side() {
       {/* Item 2 */}
       <div className="flex flex-col items-center w-full md:w-1/2 lg:w-[605px]">
         <Image
-          src="/images/sofa-seater.png"
+          src="/sofa-seater.png"
           alt="Sofa Seater"
           className="w-full h-auto max-w-[500px]"
           width={500}
@@ -43,3 +43,8 @@ function Side() {
 }
 
 export default Side;
+
+ 
+ 
+  
+

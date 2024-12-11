@@ -28,7 +28,7 @@ export default function ShopPage() {
     id: index + 1,
     description: customDescriptions[index],
     price: `Rs. ${(25000 + index * 500).toFixed(2)}`,
-    image: `/images/tp${(index % 16) + 1}.png`,
+    image: `/tp${(index % 16) + 1}.png`,
   }));
 
   return (
@@ -40,7 +40,7 @@ export default function ShopPage() {
             {/* Small Logo */}
             <div className="w-16 h-16 mx-auto mb-4">
               <Image
-                src="/images/minilogo.png"
+                src="/minilogo.png"
                 alt="Logo"
                 width={64}
                 height={64}
@@ -68,7 +68,7 @@ export default function ShopPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/heroShop.png"
+            src="/heroShop.png"
             alt="Background"
             layout="fill"
             objectFit="cover"
