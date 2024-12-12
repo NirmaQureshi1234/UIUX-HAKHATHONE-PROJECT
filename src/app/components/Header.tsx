@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <div className="">
+    <div >
       <div className="flex flex-wrap justify-center bg-[#FBEBB5]">
         <div className="flex items-center">
           <div>
