@@ -1,67 +1,74 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import Link from "next/link"
-import { Heart, Menu, Search, ShoppingCart, User, X } from 'lucide-react'
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation"; // Use this to get the current route
+import Link from "next/link";
+import { Heart, Menu, Search, ShoppingCart, User, X } from "lucide-react";
 
 export default function NavBar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const pathname = usePathname(); // Get the current route
+
+  // Determine the background color based on the current route
+  const bgColor = pathname === "/" ? "bg-[#FBEBB5]" : "bg-white";
 
   useEffect(() => {
     const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < 768)
+      setIsMobile(window.innerWidth < 768);
       if (window.innerWidth >= 768) {
-        setIsOpen(false)
+        setIsOpen(false);
       }
-    }
+    };
 
-    checkIsMobile()
-    window.addEventListener('resize', checkIsMobile)
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
 
     return () => {
-      window.removeEventListener('resize', checkIsMobile)
-    }
-  }, [])
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <nav className="bg-[#FBEBB5] px-6 py-4">
+    <nav className={`${bgColor} px-6 py-4 transition-colors duration-300`}>
       <div className="flex items-center justify-between">
-        {/* Center Section (Navigation Links) */}
-        <div className="hidden md:flex space-x-14 ml-20 items-center justify-center w-full">
+        <div className="hidden md:flex space-x-14 items-center justify-center w-full">
           <NavLinks />
         </div>
-
-        {/* Right Section (Icons) */}
-        <div className="flex mr-3 items-center space-x-5 ">
+        <div className="flex items-center space-x-11 ">
           <NavIcons />
-          {/* Hamburger Menu - Visible only on mobile */}
-          <button className="md:hidden p-2" onClick={toggleMenu}>
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          {isMobile && (
+            <button className="p-2" onClick={toggleMenu}>
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          )}
         </div>
       </div>
-      <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-96" : "max-h-0"
-        }`}
-      >
-        <div className="pt-4 pb-2 space-y-2 text-center">
-          <NavLinks mobile />
+
+      {/* Mobile Menu */}
+      {isMobile && (
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isOpen ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          <div className="pt-4 pb-2 space-y-2 text-center">
+            <NavLinks mobile />
+          </div>
         </div>
-      </div>
+      )}
     </nav>
-  )
+  );
 }
 
 function NavLinks({ mobile = false }: { mobile?: boolean }) {
   const linkClass = mobile
-    ? "block py-2 text-sm font-medium"
-    : "text-sm font-medium text-center"
+    ? "block py-2 text-lg font-medium font-poppins"
+    : "text-sm font-medium text-center font-poppins";
 
   return (
     <>
@@ -74,24 +81,28 @@ function NavLinks({ mobile = false }: { mobile?: boolean }) {
       <Link className={linkClass} href="/singleProduct">
         SingleProduct
       </Link>
-      <Link className={linkClass} href="/cart">
-        Cart
+      <Link className={linkClass} href="/blog">
+        Blog
       </Link>
       <Link className={linkClass} href="/contact">
         Contact
       </Link>
     </>
-  )
+  );
 }
 
+import { useRouter } from "next/navigation";
+
 function NavIcons() {
+  const router = useRouter();
+
   return (
     <>
-      <button className="p-2">
+      <button className="p-2" onClick={() => router.push("/myAccount")}>
         <User className="h-5 w-5" />
         <span className="sr-only">Account</span>
       </button>
-      <button className="p-2 ">
+      <button className="p-2" onClick={() => router.push("/singleProduct")}>
         <Search className="h-5 w-5" />
         <span className="sr-only">Search</span>
       </button>
@@ -99,15 +110,19 @@ function NavIcons() {
         <Heart className="h-5 w-5" />
         <span className="sr-only">Wishlist</span>
       </button>
-      <button className="p-2">
+      <button className="p-2" onClick={() => router.push("/cart")}>
         <ShoppingCart className="h-5 w-5" />
         <span className="sr-only">Cart</span>
       </button>
-    
     </>
-  )
+  );
 }
 
  
+ 
 
  
+
+
+ 
+

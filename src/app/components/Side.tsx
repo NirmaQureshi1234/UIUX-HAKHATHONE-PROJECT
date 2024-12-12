@@ -1,83 +1,52 @@
+
 "use client"
+
 import React from "react";
+import Image from "next/image";
 
 function Side() {
   return (
-    <>
-      <div className="container flex flex-wrap justify-center py-[50px] bg-[#FAF4F4] h-[672px]">
-        <div className="w-[605px] h-[562]">
-          <img src="/images/side-table.png" alt="" className="h-[500px]" />
-          <p className="text-[36px] text-black">Side Table</p>
-          <p className="underline text-black text-[24px] w-[121px] border-b-[2px]">
-            View More
-          </p>
-        </div>
-        <div className="w-[605px] h-[562]">
-          <img src="/images/sofa-seater.png" alt="" className="h-[500px]" />
-          <p className="text-[36px] text-black">Side Table</p>
-          <p className="underline text-[24px] text-black">View More</p>
-        </div>
+    <div className="container flex flex-wrap justify-center gap-8 py-12 bg-[#FAF4F4]">
+      {/* Item 1 */}
+      <div className="flex flex-col items-center w-full md:w-1/2 lg:w-[605px]">
+        <Image
+          src="/side-table.png"
+          alt="Side Table"
+          className="w-full h-auto max-w-[500px]"
+          width={500}
+          height={500}
+        />
+        <p className="text-[24px] md:text-[28px] lg:text-[36px] text-black mt-4">
+          Side Table
+        </p>
+        <p className="underline text-[18px] md:text-[20px] lg:text-[24px] text-black border-b-2 mt-2 cursor-pointer">
+          View More
+        </p>
       </div>
 
-      {/* Media Queries for Responsiveness */}
-      <style jsx global>{`
-        /* Mobile screens (max-width: 768px) */
-        @media screen and (max-width: 768px) {
-          .container {
-            flex-direction: column !important;
-            height: auto !important;
-          }
-          .w-[605px] {
-            width: 90% !important;
-          }
-          .h-[500px] {
-            height: auto !important;
-          }
-          .text-[36px] {
-            font-size: 24px !important;
-          }
-          .text-[24px] {
-            font-size: 18px !important;
-          }
-        }
-
-        /* Tablets (600px to 1024px) */
-        @media screen and (min-width: 600px) and (max-width: 1024px) {
-          .w-[605px] {
-            width: 80% !important;
-          }
-          .h-[500px] {
-            height: auto !important;
-          }
-          .text-[36px] {
-            font-size: 28px !important;
-          }
-          .text-[24px] {
-            font-size: 20px !important;
-          }
-        }
-
-        /* Desktop screens (larger than 1024px) */
-        @media screen and (min-width: 1024px) {
-          .container {
-            flex-direction: row !important;
-          }
-          .w-[605px] {
-            width: 605px !important;
-          }
-          .h-[500px] {
-            height: 500px !important;
-          }
-          .text-[36px] {
-            font-size: 36px !important;
-          }
-          .text-[24px] {
-            font-size: 24px !important;
-          }
-        }
-      `}</style>
-    </>
+      {/* Item 2 */}
+      <div className="flex flex-col items-center w-full md:w-1/2 lg:w-[605px]">
+        <Image
+          src="/sofa-seater.png"
+          alt="Sofa Seater"
+          className="w-full h-auto max-w-[500px]"
+          width={500}
+          height={500}
+        />
+        <p className="text-[24px] md:text-[28px] lg:text-[36px] text-black mt-4">
+          Sofa Seater
+        </p>
+        <p className="underline text-[18px] md:text-[20px] lg:text-[24px] text-black border-b-2 mt-2 cursor-pointer">
+          View More
+        </p>
+      </div>
+    </div>
   );
 }
 
 export default Side;
+
+ 
+ 
+  
+
