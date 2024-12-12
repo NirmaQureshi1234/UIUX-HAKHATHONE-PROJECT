@@ -21,7 +21,7 @@ function TopPicks() {
         {/* Product 1 */}
         <div className="w-full sm:w-[47%] lg:w-[23%] bg-[#FAF4F4] rounded-md p-4">
           <Image
-            src="/mask-group3.png"
+            src="/tp1.png"
             alt="Trenton modular sofa_3"
             className="w-full rounded-lg"
             width={287}
