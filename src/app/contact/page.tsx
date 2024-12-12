@@ -81,6 +81,7 @@ export default function Contact() {
               </div>
             </div>
 
+
             <div className="flex items-start space-x-4">
               <Clock className="w-6 h-6 text-gray-600 mt-1" />
               <div>
@@ -156,24 +157,22 @@ export default function Contact() {
               type="submit"
               className="w-1/2  px-6 py-3 border border-black rounded-md hover:bg-gray-50 transition-colors duration-200"
             >
-              Submit
-            </button>
-          </form>
-        </div>
-      </section>
+       Submit
+          </button>
+        </form>
+      </div>
+    </section>
+       <div className="bg-[#FAF4F4] py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+          {/* Free Delivery Section */}
+          <div className="flex flex-col items-left">
+            <div className="text-2xl font-bold text-gray-800">Free Delivery</div>
+            <p className="mt-2 text-gray-600">
+            For all oders over $50, consectetur adipim scing elit.
+            </p>
+          </div>
 
-      <div className="bg-[#FAF4F4] py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
-            {/* Free Delivery Section */}
-            <div className="flex flex-col items-left">
-              <div className="text-2xl font-bold text-gray-800">
-                Free Delivery
-              </div>
-              <p className="mt-2 text-gray-600">
-                For all oders over $50, consectetur adipim scing elit.
-              </p>
-            </div>
 
             {/* 90 Days Return Section */}
             <div className="flex flex-col items-left">
@@ -197,6 +196,14 @@ export default function Contact() {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       </>
   );
+=======
+    </div>
+
+    </div>
+ );
+
+>>>>>>> e4aa69761798cd39a1ba1c69203350423e88aed2
 }
