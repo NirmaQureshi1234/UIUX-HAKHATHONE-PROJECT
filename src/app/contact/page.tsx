@@ -7,7 +7,7 @@ import { MapPin, Phone, Clock } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="bg-white min-h-screen">
+    <>
       {/* Header Section */}
       <div className="relative bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -197,6 +197,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+      </>
   );
 }
