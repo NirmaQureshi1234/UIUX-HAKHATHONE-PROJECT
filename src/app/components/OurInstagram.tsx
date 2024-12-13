@@ -6,6 +6,7 @@ function OurInstagram() {
       <div className="container h-[450px] bg-[url('/images/rectangle.png')] bg-cover bg-center">
         <div className="flex justify-center items-center h-full">
           <div className="w-[454px] m-auto">
+            {/* added instagram */}
             <p className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[60px] font-bold my-[10px] sm:my-[15px] md:my-[20px] text-center">
               Our Instagram
             </p>
