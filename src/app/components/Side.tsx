@@ -32,6 +32,7 @@ function Side() {
           className="w-full h-auto max-w-[500px]"
           width={500}
           height={500}
+          
         />
         {/* paragraph added */}
         <p className="text-[24px] md:text-[28px] lg:text-[36px] text-black mt-4">
