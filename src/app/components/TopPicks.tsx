@@ -40,11 +40,11 @@ function TopPicks() {
           <Image
             src="/mask-group4.png"
             alt="Granite dining table with dining chair"
-            className="w-full rounded-lg"
+            className="w-full rounded-lg mt-11"
             width={287}
             height={287}
           />
-          <p className="text-[14px] md:text-[16px] mt-2">
+          <p className="text-[14px] md:text-[16px] mt-9">
             Granite dining table with dining chair
           </p>
           <p className="font-bold text-[18px] md:text-[20px] lg:text-[24px]">
@@ -74,11 +74,11 @@ function TopPicks() {
           <Image
             src="/mask-group6.png"
             alt="Plain console with teak mirror"
-            className="w-full rounded-lg"
+            className="w-full rounded-lg mt-11"
             width={287}
             height={287}
           />
-          <p className="text-[14px] md:text-[16px] mt-2">
+          <p className="text-[14px] md:text-[16px] mt-11">
             Plain console with teak mirror
           </p>
           <p className="font-bold text-[18px] md:text-[20px] lg:text-[24px]">
@@ -98,3 +98,11 @@ function TopPicks() {
 }
 
 export default TopPicks;
+
+
+ 
+ 
+
+ 
+
+ 

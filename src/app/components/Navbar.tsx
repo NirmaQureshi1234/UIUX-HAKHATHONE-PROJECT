@@ -83,7 +83,8 @@ function NavLinks({ mobile = false }: { mobile?: boolean }) {
       </Link>
       <Link className={linkClass} href="/blog">
         Blog
-      </Link>
+      </Link> 
+    
       <Link className={linkClass} href="/contact">
         Contact
       </Link>
@@ -121,8 +122,13 @@ function NavIcons() {
  
  
 
+
+
  
 
 
  
+
+ 
+  
 

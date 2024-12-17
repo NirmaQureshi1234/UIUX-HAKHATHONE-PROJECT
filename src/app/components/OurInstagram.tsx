@@ -3,7 +3,7 @@ import React from "react";
 function OurInstagram() {
   return (
     <>
-      <div className="container h-[450px] bg-[url('/images/rectangle.png')] bg-cover bg-center">
+      <div className="container h-[450px] bg-[url('/tp15.png')] bg-cover bg-center">
         <div className="flex justify-center items-center h-full">
           <div className="w-[454px] m-auto">
             {/* added instagram */}

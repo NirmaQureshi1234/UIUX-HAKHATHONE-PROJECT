@@ -99,7 +99,7 @@ export default function ShopPage() {
               <p className="mt-2 text-lg text-gray-500">{product.price}</p>
 
               {/* Add to Cart Button */}
-              <Link href={"/SingleProductPage"}>
+              <Link href={"#"}>
                 <button className="absolute inset-x-0 bottom-4 mx-auto w-10/12 bg-black text-white text-sm font-medium py-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Add to Cart
                 </button>

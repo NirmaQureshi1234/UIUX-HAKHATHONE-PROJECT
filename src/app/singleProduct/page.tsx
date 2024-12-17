@@ -51,7 +51,7 @@ export default function SingleProductPage() {
             {[1, 2, 3, 4].map((item) => (
               <div
                 key={item}
-                className="bg-yellow-50 p-2 justify-center rounded-lg cursor-pointer border border-gray-200 hover:border-gray-400"
+                className="bg-yellow-50 p-6 justify-center items-center rounded-lg cursor-pointer border border-gray-200 hover:border-gray-400"
               >
                 <Image
                   src={`/tp${item}.png`}
@@ -279,7 +279,7 @@ export default function SingleProductPage() {
           {/* Product Section */}
           <div className="flex justify-center gap-8 flex-wrap">
             {/* First Product */}
-            <div className="text-center  p-6 rounded-lg w-64 mb-6">
+            <div className="text-center p-6 rounded-lg w-64 mb-6">
               <Image
                 src="/tp1.png"
                 alt="Product 1"
@@ -367,7 +367,7 @@ export default function SingleProductPage() {
             </button>
           </div>
           <div className="p-4 space-y-4">
-            <div className="flex items-center space-x-4 ">
+            <div className="flex items-center space-x-4">
               <Image
                 src="/sofa1.png"
                 alt="Cart Item"

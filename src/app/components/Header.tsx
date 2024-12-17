@@ -30,9 +30,9 @@ function Header() {
           <Image
             src="/single-seater.png"
             alt="Rocket single seater"
-            width={853}
-            height={700}
-            className="w-[853px] h-[700px]"
+            width={600}
+            height={600}
+            className="w-[600px] h-[600px]"
             priority
           />
         </div>

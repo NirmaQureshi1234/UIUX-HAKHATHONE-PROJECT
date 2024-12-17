@@ -4,107 +4,98 @@ import Image from "next/image";
 
 function MyAccount() {
   return (
-    <div className="max-w-screen-2xl container mx-auto">
-      <div className="bg-gray-100"></div>
+    <div className="bg-gray-50 min-h-screen">
       {/* Banner Section */}
-      <div className="relative">
-        <Image
-          src="/heroShop.png"
-          alt="Shop Banner"
-          height={400}
-          width={1600}
-          className="w-full h-[200px] md:h-auto object-cover opacity-40"
-        />
-        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl md:text-4xl font-bold">
-          My Account
-        </h1>
-        {/* Breadcrumb Section */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-14">
-          <p className="text-gray-700 text-xs md:text-xl flex items-center">
-            <Link
-              href="/"
-              className="text-sm text-gray-500 mt-2 flex items-center justify-center space-x-4"
-            >
-              Home
-            </Link>
-            <span className="font-normal text-center mx-2">{">"}</span>
-            <Link
-              href="/singleProduct"
-              className="text-gray-500 h-3 w-3 text-xs text-center"
-            >
-              SingleProduct
-            </Link>
-          </p>
-        </div>
-      </div>
+      <div className="relative bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="py-16 text-center">
+            {/* Logo */}
+            <div className="w-16 h-16 mx-auto mb-4">
+              <Image
+                src="/minilogo.png"
+                alt="Logo"
+                width={64}
+                height={64}
+                className="object-contain"
+              />
+            </div>
 
-      {/* Content Section */}
-      <div className="mt-8 grid gap-8 mx-4 lg:mx-32 lg:grid-cols-2">
-        {/* Login Section */}
-        <div className="p-4 rounded">
-          <h2 className="text-3xl font-bold my-8">Log In</h2>
-          <div className="flex flex-col">
-            <label className="my-2 text-gray-700 mb-2" htmlFor="username">
-              Username or email address
-            </label>
-            <input
-              type="text"
-              id="username"
-              className="w-full sm:w-[300px] my-2 border border-gray-400 rounded p-2 mb-4"
-            />
-          </div>
-          <div className="flex flex-col">
-            <label className="my-2 text-gray-700 mb-2" htmlFor="password">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              className="w-full sm:w-[300px] my-2 border border-gray-400 rounded p-2 mb-4"
-            />
-          </div>
-          <div className="flex items-center mb-4">
-            <input type="checkbox" id="remember" className="mr-2" />
-            <label htmlFor="remember" className="text-gray-800 my-4">
-              Remember me
-            </label>
-          </div>
-          <div className="flex items-center">
-            <button className="border border-black font-medium text-black px-10 py-3 rounded-xl hover:text-white hover:bg-gray-700">
-              Log In
-            </button>
-            <p className="ml-6 text-gray-500 text-sm hover:underline cursor-pointer">
-              Lost Your Password?
+            {/* Heading */}
+            <h1 className="text-4xl font-bold text-gray-900">My Account</h1>
+
+            {/* Breadcrumb */}
+            <p className="text-sm text-gray-500 mt-2 flex items-center justify-center space-x-2">
+              <span>
+                <Link href="/">Home</Link>
+              </span>
+              <span> &gt; </span>
+              <span>
+                <Link href="/myAccount">My Account</Link>
+              </span>
             </p>
           </div>
         </div>
 
-        {/* Register Section */}
-        <div className="p-4 rounded">
-          <h2 className="text-3xl font-bold my-8">Register</h2>
-          <label
-            className="block my-2 text-gray-700 mb-2"
-            htmlFor="register-email"
-          >
-            Email address
-          </label>
-          <input
-            type="text"
-            id="register-email"
-            className="w-full sm:w-[300px] my-2 border border-gray-400 rounded p-2 mb-4"
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/heroShop.png"
+            alt="Background"
+            layout="fill"
+            objectFit="cover"
+            className="pointer-events-none opacity-30"
           />
-          <p className="text-gray-500 my-4">
-            A link to set a new password will be sent to your email address.
-          </p>
-          <p className="text-gray-500 mb-4">
-            Your personal data will be used to support your experience
-            throughout this website, to manage access to your account, and for
-            other purposes described in our{" "}
-            <span className="font-bold text-gray-700">privacy policy</span>.
-          </p>
-          <button className="border my-10 border-black font-medium text-black px-10 py-3 rounded-xl hover:text-white hover:bg-gray-700">
-            Register
-          </button>
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Login Section */}
+          <div className="p-6 bg-white rounded-lg shadow-md">
+            <h2 className="text-3xl font-bold my-4">Log In</h2>
+            <div className="flex flex-col mb-4">
+              <label htmlFor="username" className="mb-2 text-gray-700">Username or email address</label>
+              <input
+                type="text"
+                id="username"
+                className="border border-gray-400 rounded p-2"
+              />
+            </div>
+            <div className="flex flex-col mb-4">
+              <label htmlFor="password" className="mb-2 text-gray-700">Password</label>
+              <input
+                type="password"
+                id="password"
+                className="border border-gray-400 rounded p-2"
+              />
+            </div>
+            <button className="px-10 py-3 bg-black text-white rounded-xl hover:bg-gray-700">Log In</button>
+            <p className="mt-4 text-gray-500 text-sm hover:underline cursor-pointer">
+              Lost Your Password?
+            </p>
+          </div>
+
+          {/* Register Section */}
+          <div className="p-6 bg-white rounded-lg shadow-md">
+            <h2 className="text-3xl font-bold my-4">Register</h2>
+            <div className="flex flex-col mb-4">
+              <label htmlFor="register-email" className="mb-2 text-gray-700">Email address</label>
+              <input
+                type="text"
+                id="register-email"
+                className="border border-gray-400 rounded p-2"
+              />
+            </div>
+            <p className="text-gray-500 mb-4">
+              A link to set a new password will be sent to your email address.
+            </p>
+            <p className="text-gray-500 mb-4">
+              Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our{" "}
+              <span className="font-bold text-gray-700">privacy policy</span>.
+            </p>
+            <button className="px-10 py-3 bg-black text-white rounded-xl hover:bg-gray-700">Register</button>
+          </div>
         </div>
       </div>
     </div>

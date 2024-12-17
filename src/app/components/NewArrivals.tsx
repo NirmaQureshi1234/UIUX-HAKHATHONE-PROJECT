@@ -9,8 +9,8 @@ function NewArrivals() {
           src="/tp14.png"
           alt="Asgaard sofa"
           className="h-[700px] w-[900px]"
-          width={900}
-          height={700}
+          width={983}
+          height={799}
         />
         <div className="">
           <p className="text-[24px] text-center">New Arrivals</p>
